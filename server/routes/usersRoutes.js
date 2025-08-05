@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
 const createController = require('../utils/universalController');
-const useUniversalController = createController('users');
+const userUniversalController = createController('users');
 
-router.post('/', useUniversalController.create);
-router.get('/', useUniversalController.getAll);
-router.get('/:id', useUniversalController.getById);
-router.put('/:id', useUniversalController.update);
-router.delete('/:id', useUniversalController.delete);
+router.post('/', userUniversalController.create);
+router.get('/', userUniversalController.getAll);
+router.get('/:id', userUniversalController.getById);
+router.put('/:id', userUniversalController.update);
+router.delete('/:id', userUniversalController.delete);
 
 module.exports = router;
