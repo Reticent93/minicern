@@ -12,6 +12,10 @@ app.use(express.json());
 
 // Importing routes
 app.use('/users', require('./routes/usersRoutes'));
+app.use('/appointments', require('./routes/appointmentsRoutes'));
+app.use('/providers', require('./routes/providersRoutes'));
+app.use('/medications', require('./routes/medicationRoutes'));
+app.use('/insurances', require('./routes/insuranceRoutes'));
 
 
 
