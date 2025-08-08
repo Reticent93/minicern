@@ -14,7 +14,7 @@ const UserPage = () => {
             console.log("My fetched users", data)
             setUser(Array.isArray(data) ? data : []);
         });
-        console.log("API Returned",user)
+        console.log("User API Returned",user)
     }, [])
 
     const handleSubmit = async (e) => {
