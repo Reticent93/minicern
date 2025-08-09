@@ -16,7 +16,7 @@ const createUniversalController = (tableName) => {
                 const records = await db(tableName).select('*');
                 res.json(records);
             } catch (e) {
-                res.status(500).json({ error: 'Error getting all records', details: e });
+                res.status(500).json({ error: 'Error getting all records', details: e.message });
             }
         },
 

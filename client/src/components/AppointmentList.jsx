@@ -8,6 +8,9 @@ const AppointmentList = ({ appointments }) => {
                 <th>Patient</th>
                 <th>Date</th>
                 <th>Time</th>
+                <th>Status</th>
+                <th>Notes</th>
+
             </tr>
             </thead>
             <tbody>
@@ -16,6 +19,8 @@ const AppointmentList = ({ appointments }) => {
                     <td>{appt.patientName}</td>
                     <td>{appt.date}</td>
                     <td>{appt.time}</td>
+                    <td>{appt.status}</td>
+                    <td>{appt.notes}</td>
                 </tr>
             ))}
             </tbody>

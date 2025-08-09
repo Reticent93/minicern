@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {createUser, fetchUser} from "../services/api.js";
+import {createUser, fetchUsers} from "../services/api.jsx";
 
 const UserPage = () => {
     const [user, setUser] = useState([]);
@@ -10,7 +10,7 @@ const UserPage = () => {
     })
 
     useEffect(() => {
-        fetchUser().then(data => {
+        fetchUsers().then(data => {
             console.log("My fetched users", data)
             setUser(Array.isArray(data) ? data : []);
         });
